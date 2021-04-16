@@ -86,6 +86,11 @@
 	</head>
 	<body class="is-preload">
 
+		<audio id="myAudio">
+			<source src="sound/Heavy Metal Happy Birthday.mp3" type="audio/mp3">
+			Your browser does not support the audio element.
+		</audio>
+
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -100,11 +105,13 @@
 			</div>
 
 		<!-- Scripts -->
-		<script>
+			<script>
 			// When the user clicks on div, open the popup
 			function myFunction() {
+			  var x = document.getElementById("myAudio");
 			  var popup = document.getElementById("myPopup");
-			  popup.classList.toggle("show");
+			  popup.classList.toggle("show");			  
+			  x.play();
 			}
 			</script>
 			<script src="assets/js/jquery.min.js"></script>
